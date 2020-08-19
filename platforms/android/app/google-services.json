@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "389742949728",
+    "project_id": "michigan-elections-e4db1",
+    "storage_bucket": "michigan-elections-e4db1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389742949728:android:14cdef7f2e5f3a55f05a05",
+        "android_client_info": {
+          "package_name": "com.gongwer.mi2022"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389742949728-91degqvadegnk99ghmgq5vb09cmibfr1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACDlUowm1TtSKRTLyaREafvlrcg7U2p6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389742949728-91degqvadegnk99ghmgq5vb09cmibfr1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

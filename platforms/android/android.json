@@ -1,0 +1,94 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"PushNotification\"><param name=\"android-package\" onload=\"true\" value=\"com.pushwoosh.plugin.pushnotifications.PushNotifications\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<preference name=\"GradlePluginGoogleServicesEnabled\" value=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"GradlePluginGoogleServicesVersion\" value=\"4.3.10\" />",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest/application": [
+            {
+              "xml": "<meta-data android:name=\"com.pushwoosh.log_level\" android:value=\"DEBUG\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.pushwoosh.foreground_push\" android:value=\"false\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.pushwoosh.notification_service_extension\" android:value=\"com.pushwoosh.plugin.pushnotifications.PushwooshNotificationServiceExtension\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.pushwoosh.internal.plugin_provider\" android:value=\"com.pushwoosh.plugin.internal.PhonegapPluginProvider\" />",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.gongwer.mi2022"
+    },
+    "pushwoosh-cordova-plugin": {
+      "LOG_LEVEL": "DEBUG",
+      "IOS_FOREGROUND_ALERT_TYPE": "NONE",
+      "ANDROID_FOREGROUND_PUSH": "false",
+      "PACKAGE_NAME": "com.gongwer.mi2022"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-inappbrowser.inappbrowser",
+      "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+      "pluginId": "cordova-plugin-inappbrowser",
+      "clobbers": [
+        "cordova.InAppBrowser.open"
+      ]
+    },
+    {
+      "id": "pushwoosh-cordova-plugin.PushNotification",
+      "file": "plugins/pushwoosh-cordova-plugin/www/PushNotification.js",
+      "pluginId": "pushwoosh-cordova-plugin",
+      "clobbers": [
+        "plugins.pushNotification"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-inappbrowser": "5.0.0",
+    "pushwoosh-cordova-plugin": "8.3.3"
+  }
+}
